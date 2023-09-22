@@ -1,0 +1,45 @@
+/* Set variables color */
+:root{
+    --primary-color: #4f4aa6;
+    --secondary-color: #48ca95;
+    --bg-color: #f7f7f7;
+    font-family: Montserrat;
+}
+
+/* To reset all styles on the page */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*To import te fonts*/
+@font-face {
+    font-family: Montserrat;
+    src: url('assets/fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: Montserrat-bold;
+    src: url('assets/fonts/Montserrat-Bold.woff');
+}
+@font-face {
+    font-family: Montserrat-ExtraLight;
+    src: url('assets/fonts/Montserrat-ExtraLight.ttf');
+}
+
+header{
+    background-image: url('assets/images/banner.jpg');
+    background-size: cover;/* para que ocupe todo el espacion y no lo repita*/
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    justify-content: space-between; /*horizontal distribution*/
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
