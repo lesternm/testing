@@ -5,6 +5,7 @@
     --bg-color: #f7f7f7;
     --light-color:#fff;
 
+    --header-title-font: Poppins-Bold;
     --text-font: Poppins;
     --menu-font: Poppins-Bold;
     
@@ -84,19 +85,25 @@ nav ul li a:hover{
 .header-content{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 5%;
     margin-bottom: 50px;
 }
 .header-content-text{
     max-width: 500px;
     color: var(--light-color);
 }
+.header-img{
+    margin: 5px 25px;
+    
+}
+ /*Wrapper(Envoltura)*/
+
 .header-content-btns{
     margin-top: 40px;
 }
 .header-title{
     font-size: 80px;
-    font-family: var(--menu-font);
+    font-family: var(--header-title-font);
 }
 .header-subtitle{
     font-size: 40px;
@@ -108,6 +115,7 @@ nav ul li a:hover{
     padding: 15px 50px;
     border: 2px solid var(--light-color);
     text-decoration: none;
+    margin: 0px 5px;
 }
 
 .btn:hover{
