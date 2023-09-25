@@ -5,8 +5,10 @@
     --secondary-color: #48ca95;
     --bg-color: #f7f7f7;
     --light-color:#fff;
+    --dark-color: #000;
 
     --header-title-font: Poppins-Bold;
+    --section-title-font: Poppins-SemiBold;
     --text-font: Poppins;
     --menu-font: Poppins-Bold;
     
@@ -45,6 +47,20 @@
     font-family: Poppins-ExtraBold;
     src: url('assets/fonts2/Poppins-ExtraBold.ttf');
 }
+@font-face {
+    font-family: Poppins-Black;
+    src: url('assets/fonts2/Poppins-Black.ttf');
+}
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url('assets/fonts2/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('assets/fonts2/Poppins-Medium.ttf');
+}
+
 /*Header*/
 header{
     background-image: url('assets/images/banner.jpg');
@@ -197,3 +213,71 @@ nav ul li a:hover{
     text-align: center;
 }
 /*End Card Section*/
+
+/*Produts Section*/
+.products{
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*cuando flex-direction es column lo que va a centrar es con */
+    align-items:center;
+    padding-top: 50px;
+}
+
+.products h3{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: var(--section-title-font);
+    /* text-decoration: underline;
+    text-decoration-color: var(--secondary-color);    
+    line-height: 50px; */
+    border-bottom: 1px solid var(--secondary-color);
+    margin-bottom: 25px;  
+}
+
+.products-container{
+    background-color: var(--light-color);    
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap; /* pone una tarjeta debajo de la otra pero si hay debordamiento la baja hacia abajo creando otra fila */
+    justify-content:space-around;
+    align-content: center;
+    padding-bottom: 25px;
+    margin-bottom: 100px;
+}
+
+.product-card{
+    width: 203;
+    border: solid thin;
+    display:flex;
+    flex-direction:column;
+    margin: 50px;
+}
+
+.product-card a{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 10px;
+    width:100%;
+    text-decoration: none;
+    text-align: center;    
+}
+.btn-secondary{
+    color: var(--secondary-color);
+    padding: 15px 50px;
+    border: 2px solid var(--secondary-color);
+    text-decoration: none;
+    margin: 0px 5px;
+}
+
+@media(max-width:1100px){    
+    .products-container{
+        width: 96%;
+    }
+}
+/*End Products Section*/
+
+/*Banner Section*/
+
+
+/*End Banner Section*/
