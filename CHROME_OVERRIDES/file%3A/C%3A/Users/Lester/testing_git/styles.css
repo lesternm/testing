@@ -164,3 +164,39 @@ nav ul li a:hover{
 }
 
 /*End Header*/
+
+/*Cards Section*/
+/*100vw 100virtual width*/
+.cards{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 60px;
+    flex-wrap:wrap; /*wrap(envolvente) antes se encogían las card con el wrap cuando se disminuye el tamaño las card se adaptan se ponen una debajo de otra*/
+}
+.card{
+    margin: 5px;
+    padding: 30px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 15px;
+    max-width: 350px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+      
+}
+.card h5{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.card p{
+    text-align: center;
+}
+
+
+
+/*End Card Section*/
