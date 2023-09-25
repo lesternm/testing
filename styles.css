@@ -94,8 +94,7 @@ nav ul li a:hover{
     color: var(--light-color);
 }
 .header-img{
-    margin: 5px 25px;
-    
+    margin: 5px 25px;    
 }
  /*Wrapper(Envoltura)*/
 
@@ -107,8 +106,7 @@ nav ul li a:hover{
     font-family: var(--header-title-font);
 }
 .header-subtitle{
-    font-size: 40px;
-    
+    font-size: 40px;    
 }
 
 .btn{
@@ -128,13 +126,41 @@ nav ul li a:hover{
     display: none;
 }
 
-@media(max-with: 800px){
+@media(max-width: 800px){
     .menu-mobile{
         display: flex;        
     }
     .menu-screen{
         display:none;
     }
+}
+
+@media(max-width:1300px){
+    .header-content{
+        flex-direction:column;
+    }
+    .header-content-text{
+        margin-left: 20px;
+    }    
+    .header-title{
+        font-size: 40px;        
+    }
+    .header-subtitle{
+        font-size: 20px;    
+    }
+    .header-content-text p{
+        font-size: 14px;
+    }
+    .btn{
+        padding: 10px 30px;
+    }
+    .header-img{
+        margin: 50px 10px;
+        width: 95%;
+        height: 100%;
+        max-width: 500px;
+    }
+    
 }
 
 /*End Header*/
