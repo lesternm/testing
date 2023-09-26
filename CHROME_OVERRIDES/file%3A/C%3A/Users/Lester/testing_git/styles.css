@@ -230,7 +230,7 @@ nav ul li a:hover{
     padding-top: 50px;
 }
 
-.products h3{
+.section-title{
     text-transform: uppercase;
     font-size: 24px;
     font-family: var(--section-title-font);
@@ -326,6 +326,28 @@ nav ul li a:hover{
         flex-direction:column;        
     }
 }
-
-
 /*End Banner Section*/
+
+/*Review Section*/
+.reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.review-card{
+    width: 800px;   
+}
+.review-card h5{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+@media(max-width:800px){
+    .review-card{
+    width: 95%;   
+}
+}
+/*End Review Section*/

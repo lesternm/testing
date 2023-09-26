@@ -230,7 +230,7 @@ nav ul li a:hover{
     padding-top: 50px;
 }
 
-.products h3{
+.section-title{
     text-transform: uppercase;
     font-size: 24px;
     font-family: var(--section-title-font);
@@ -326,6 +326,9 @@ nav ul li a:hover{
         flex-direction:column;        
     }
 }
-
-
 /*End Banner Section*/
+
+/*Review Section*/
+
+
+/*End Review Section*/
