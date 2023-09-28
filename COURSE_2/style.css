@@ -1,0 +1,25 @@
+/*To reset all paddings an margins*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    /* grid-template-rows: 1fr 2fr 1fr; */
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    /* justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center; */
+
+}
+
+.container div {
+    border: thin solid;
+    padding: 20px;
+    text-align: center;
+}
