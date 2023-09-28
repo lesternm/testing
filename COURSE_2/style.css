@@ -1,0 +1,11 @@
+h1, h2, h3, .title, #mytitle {
+    color: blueviolet;
+}
+
+.card a {
+    color: red;
+}
+
+div ul li a {
+    color: red;
+}
