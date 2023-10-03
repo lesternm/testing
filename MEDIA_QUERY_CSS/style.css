@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary-color: #cdcdcd;
     --secondary-color: #4e4e4e;
     --light--color: white;
@@ -9,26 +9,69 @@
     box-sizing: border-box;
 }
 
-main {
-    width: 100vw;
-    height: 100vh; 
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.text-header {
+    text-align: center;
+    font-size: 50px;
+    /* background: linear-gradient(#4e4e4e, #cdcdcd); */
+    background: linear-gradient(#cdcdcd, #4e4e4e); /* https://cssgradient.io */
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; /*garantizar compatibilidad */
+}
+.card-container {
+    /* width: 100vw;
+    height: 100vh; */
+    width: 100%;
+    height: 100%;
     background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.card{
+.card {
     margin: 10px;
     padding: 15px;
     border-radius: 10px;
     border: 1px solid;
     width: 400px;
-    height: 600px;
+    height: 400px;
     background-color: var(--light--color);
 }
 
-.card h3{
+.card h3 {
     text-transform: uppercase;
-    color: var(--secondary-color);    
-}
-.card p{
     color: var(--secondary-color);
+}
+.card p {
+    color: var(--secondary-color);
+}
+
+/* @media (max-width:800px) {
+    .card{
+        background-color: red;
+    }
+} */
+.menu-mobile {
+    /* display: none; */
+    visibility: hidden; /*with visibility it keeps its original position*/
+}
+
+@media (width<=800px) {
+    .card {
+        background-color: red;
+    }
+    .menu-mobile {
+        visibility: visible;
+    }
+    .menu {
+        visibility: hidden;
+    }
 }
