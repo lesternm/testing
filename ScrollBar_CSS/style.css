@@ -19,6 +19,12 @@
 }
 
 ::selection {
+    color: red;
+    background: yellow;
+}
+::-moz-selection {
+    color: red;
+    background: yellow;
 }
 
 .container {
